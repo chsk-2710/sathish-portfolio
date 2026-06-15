@@ -1,99 +1,133 @@
 export const profile = {
-  name: "Sathish Kumar Chittipothula",
+  fullName: "Chittipothula Sathish Kumar",
+  name: "Sathish Kumar",
   initials: "SK",
-  role: "Senior Engineer | Java | Spring Boot | Microservices",
-  location: "Hyderabad, India",
-  availability: "Open to Java Backend roles",
-  headline: "Full Stack Developer",
+  role: "Full Stack Developer",
+  headline: "Building Enterprise Applications With Java & React",
   summary:
-    "I design Spring Boot systems with API Gateway security, distributed Redis sessions, resilient service communication, and cloud-native deployment practices.",
-  currentRole: "Senior Engineer at Coforge",
-  currentSummary: "Healthcare platform engineering since June 2022.",
+    "Full Stack Developer with 5+ years of experience in Java, Spring Boot, ReactJS, PostgreSQL, MS SQL Server and Microservices. Passionate about designing scalable, secure and high-performance applications.",
+  location: "Hyderabad, India",
   email: "skch2710@gmail.com",
-  phone: "+91 94905 24580",
-  phoneHref: "tel:+919490524580",
   github: "https://github.com/skch2710",
-  githubText: "github.com/skch2710",
-  linkedIn: "https://www.linkedin.com/",
-  roleHighlights: ["Healthcare microservices", "API Gateway security", "Redis sessions"],
+  linkedin: "https://www.linkedin.com/in/sathish-kumar-ch-69202224b",
+  resume: "/resume/Sathish-Kumar-Resume.pdf",
 };
 
-export const highlights = [
+export const statistics = [
   {
-    label: "4+ years",
-    text: "Java backend engineering experience in enterprise healthcare systems",
+    value: "5+",
+    label: "Years Experience",
   },
   {
-    label: "Security-first",
-    text: "JWT, OAuth2, HttpOnly cookies, RBAC, Redis session control",
+    value: "15+",
+    label: "Projects Delivered",
   },
   {
-    label: "Cloud-ready",
-    text: "Docker, Kubernetes, Jenkins CI/CD, AWS, Azure fundamentals",
+    value: "10M+",
+    label: "Records Processed",
+  },
+  {
+    value: "100+",
+    label: "APIs Developed",
   },
 ];
 
-export const interviewPoints = [
-  "Designed healthcare microservices with secure RESTful communication and clear API versioning.",
-  "Built centralized API Gateway flows for routing, authentication, authorization, and request validation.",
-  "Implemented Redis-backed distributed sessions for single-login enforcement and session invalidation.",
-  "Improved resilience using Circuit Breaker and Retry patterns to reduce cascading service failures.",
-  "Created bulk upload and export pipelines with multithreading, Apache POI, iText PDF, and SMB ingestion.",
-];
-
-export const skills = [
+export const skillCategories = [
   {
     title: "Backend",
-    icon: "terminal",
-    items: ["Java", "Spring Boot", "Spring Security", "Spring Data JPA", "Hibernate", "REST APIs"],
+    skills: [
+      "Java",
+      "Spring Boot",
+      "Microservices",
+      "REST APIs",
+      "OAuth2",
+      "JWT",
+    ],
   },
+
   {
-    title: "Architecture",
-    icon: "code",
-    items: ["Microservices", "API Gateway", "Spring Cloud", "Resilience4j", "Circuit Breaker", "Retry"],
+    title: "Frontend",
+    skills: ["ReactJS", "JavaScript", "MUI", "HTML", "CSS"],
   },
+
   {
-    title: "Data & Messaging",
-    icon: "storage",
-    items: ["PostgreSQL", "MS SQL", "Redis", "Apache Kafka", "Excel/CSV batch processing"],
+    title: "Database",
+    skills: ["PostgreSQL", "MS SQL Server", "MySQL"],
   },
+
   {
-    title: "Frontend & DevOps",
-    icon: "verified",
-    items: ["React JS", "JavaScript", "Docker", "Kubernetes", "Jenkins", "Swagger"],
+    title: "DevOps",
+    skills: ["Docker", "Git", "GitHub", "Azure DevOps", "Jenkins"],
   },
 ];
 
-export const experience = {
-  company: "Coforge",
-  title: "Senior Engineer",
-  stack: "Java / Spring Boot",
-  period: "June 2022 - Present",
-  points: [
-    "Enterprise healthcare microservices",
-    "API Gateway authentication and request validation",
-    "Redis session management and single-login enforcement",
-    "Docker and Kubernetes deployments",
-  ],
-};
+export const experienceData = [
+  {
+    company: "Current Company",
 
-export const project = {
-  title: "340B Direct Healthcare System",
-  description:
-    "Built services for the US 340B Drug Pricing Program, covering entities, pharmacies, administrators, prescribers, and wholesalers with secure data access.",
-  techStack: ["Java", "Spring Boot", "Spring Cloud", "JWT", "OAuth2", "Redis", "PostgreSQL"],
-};
+    role: "Senior Full Stack Developer",
 
-export const education = {
-  degree: "B.Tech in Electronics and Communication",
-  college: "Vaagdevi College of Engineering",
-  location: "Warangal, Telangana",
-  period: "2014 - 2018",
-};
+    duration: "2023 - Present",
 
-export const certifications = [
-  "Advanced Java Programming",
-  "ReactJS",
-  "Microsoft Azure Fundamentals",
-  "Generative AI",
+    description:
+      "Developing scalable enterprise applications using Spring Boot, ReactJS and Microservices architecture.",
+  },
+
+  {
+    company: "Previous Company",
+
+    role: "Software Engineer",
+
+    duration: "2021 - 2023",
+
+    description:
+      "Worked on backend services, authentication systems and database optimization.",
+  },
+];
+
+export const projectsData = [
+  {
+    title: "User Management System",
+
+    description:
+      "Enterprise user management solution with authentication and authorization.",
+
+    image: "/images/project1.jpg",
+
+    technologies: ["Spring Boot", "ReactJS", "PostgreSQL"],
+
+    github: "https://github.com/your-github/project1",
+
+    demo: "https://demo-link.com",
+  },
+
+  {
+    title: "Excel Processing Engine",
+
+    description:
+      "Large-scale Excel processing application capable of handling millions of records.",
+
+    image: "/images/project2.jpg",
+
+    technologies: ["Java", "Spring Boot", "Apache POI"],
+
+    github: "https://github.com/your-github/project2",
+
+    demo: "https://demo-link.com",
+  },
+
+  {
+    title: "Customer Portal",
+
+    description:
+      "Modern self-service customer portal built using ReactJS and Spring Boot.",
+
+    image: "/images/project3.jpg",
+
+    technologies: ["ReactJS", "MUI", "Docker"],
+
+    github: "https://github.com/your-github/project3",
+
+    demo: "https://demo-link.com",
+  },
 ];
