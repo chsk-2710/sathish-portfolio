@@ -10,90 +10,36 @@ import {
 
 import { skillsStyles } from "./skillsStyles";
 
-const skillCategories = [
-  {
-    title: "Backend",
-    skills: [
-      { name: "Java", value: 95 },
-      { name: "Spring Boot", value: 92 },
-      { name: "Microservices", value: 90 },
-      { name: "REST APIs", value: 95 },
-    ],
-  },
-  {
-    title: "Frontend",
-    skills: [
-      { name: "ReactJS", value: 88 },
-      { name: "JavaScript", value: 90 },
-      { name: "MUI", value: 90 },
-      { name: "HTML/CSS", value: 92 },
-    ],
-  },
-];
-
-const tools = [
-  "PostgreSQL",
-  "MS SQL Server",
-  "Docker",
-  "Git",
-  "GitHub",
-  "Azure DevOps",
-  "Jenkins",
-  "OAuth2",
-  "JWT",
-  "Apache Camel",
-];
+import { skillCategories, tools } from "../../data/portfolioData";
 
 function Skills() {
   return (
-    <Box
-      id="skills"
-      sx={skillsStyles.section}
-    >
+    <Box id="skills" sx={skillsStyles.section}>
       <Container maxWidth="lg">
-        <Typography
-          variant="h3"
-          sx={skillsStyles.title}
-        >
+        <Typography variant="h4" sx={skillsStyles.title}>
           Technical Skills
         </Typography>
 
         <Typography sx={skillsStyles.subtitle}>
-          Technologies and tools used to build
-          scalable enterprise applications.
+          Technologies and tools used to build scalable enterprise applications.
         </Typography>
 
         <Grid container spacing={4}>
           {skillCategories.map((category) => (
-            <Grid
-              key={category.title}
-              size={{ xs: 12, md: 6 }}
-            >
+            <Grid key={category.title} size={{ xs: 12, md: 6 }}>
               <Card sx={skillsStyles.categoryCard}>
-                <Typography
-                  variant="h5"
-                  sx={skillsStyles.categoryTitle}
-                >
+                <Typography variant="h5" sx={skillsStyles.categoryTitle}>
                   {category.title}
                 </Typography>
 
                 {category.skills.map((skill) => (
-                  <Box
-                    key={skill.name}
-                    sx={skillsStyles.skillRow}
-                  >
-                    <Box
-                      sx={skillsStyles.skillHeader}
-                    >
-                      <Typography
-                        sx={skillsStyles.skillName}
-                      >
+                  <Box key={skill.name} sx={skillsStyles.skillRow}>
+                    <Box sx={skillsStyles.skillHeader}>
+                      <Typography sx={skillsStyles.skillName}>
                         {skill.name}
                       </Typography>
 
-                      <Typography>
-                        {skill.value}%
-                      </Typography>
+                      <Typography>{skill.value}%</Typography>
                     </Box>
 
                     <LinearProgress
@@ -109,10 +55,7 @@ function Skills() {
 
           <Grid size={{ xs: 12 }}>
             <Card sx={skillsStyles.categoryCard}>
-              <Typography
-                variant="h5"
-                sx={skillsStyles.categoryTitle}
-              >
+              <Typography variant="h5" sx={skillsStyles.categoryTitle}>
                 Tools & Platforms
               </Typography>
 

@@ -5,6 +5,7 @@ import {
   Chip,
   Container,
   Grid,
+  Link,
   Typography,
 } from "@mui/material";
 
@@ -44,6 +45,9 @@ function Hero() {
                   variant="contained"
                   size="medium"
                   startIcon={<EmailOutlined />}
+                  onClick={() =>
+                    (window.location.href = `mailto:${profile.email}`)
+                  }
                 >
                   Contact Me
                 </Button>
@@ -52,6 +56,7 @@ function Hero() {
                   variant="outlined"
                   size="medium"
                   startIcon={<DownloadOutlined />}
+                  onClick={() => window.open(profile.resume, "_blank")}
                 >
                   Download Resume
                 </Button>
@@ -60,14 +65,14 @@ function Hero() {
               <Box sx={heroStyles.statsContainer}>
                 <Box sx={heroStyles.statItem}>
                   <Typography variant="h4" sx={heroStyles.statValue}>
-                    4+
+                    {profile.yearsOfExperience}
                   </Typography>
                   <Typography sx={heroStyles.statLabel}>Years Exp</Typography>
                 </Box>
 
                 <Box sx={heroStyles.statItem}>
                   <Typography variant="h4" sx={heroStyles.statValue}>
-                    10+
+                    {profile.numberOfProjects}
                   </Typography>
                   <Typography sx={heroStyles.statLabel}>Projects</Typography>
                 </Box>
@@ -81,7 +86,7 @@ function Hero() {
                 <Box sx={heroStyles.imageGlow} />
                 <Avatar
                   src={profileImage}
-                  alt="Sathish Kumar"
+                  alt={profile.name}
                   sx={heroStyles.avatar}
                 />
               </Box>
@@ -89,8 +94,22 @@ function Hero() {
             <Box sx={heroStyles.chipContainer}>
               <Chip
                 icon={<WorkOutlineOutlined />}
-                label="Open To Opportunities"
                 color="primary"
+                label={
+                  <>
+                    {profile.currentCompanyRole} @{" "}
+                    <Link
+                      href={profile.currentCompanyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      underline="hover"
+                      color="inherit"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      {profile.currentCompany}
+                    </Link>
+                  </>
+                }
               />
               <Chip
                 icon={<LocationOnOutlined />}

@@ -8,80 +8,35 @@ export const profile = {
     "Full Stack Developer with 5+ years of experience in Java, Spring Boot, ReactJS, PostgreSQL, MS SQL Server and Microservices. Passionate about designing scalable, secure and high-performance applications.",
   location: "Hyderabad, India",
   email: "skch2710@gmail.com",
+  phone: "+91 12345 67890",
   github: "https://github.com/skch2710",
   linkedin: "https://www.linkedin.com/in/sathish-kumar-ch-69202224b",
-  resume: "/resume/Sathish-Kumar-Resume.pdf",
+  resume: "/resume/Sathish-Kumar-Resume.docx",
+  currentCompany: "Coforge",
+  currentCompanyUrl: "https://www.coforge.com/",
+  currentCompanyRole: "Senior Software Engineer",
+  yearsOfExperience: "5+",
+  numberOfProjects: "15+",
+  about:
+    "Passionate Full Stack Developer specializing in scalable enterprise applications. Skilled in Java, Spring Boot, ReactJS, PostgreSQL, Microservices and DevOps.",
 };
 
-export const statistics = [
+export const experiences = [
   {
-    value: "5+",
-    label: "Years Experience",
-  },
-  {
-    value: "15+",
-    label: "Projects Delivered",
-  },
-  {
-    value: "10M+",
-    label: "Records Processed",
-  },
-  {
-    value: "100+",
-    label: "APIs Developed",
-  },
-];
-
-export const skillCategories = [
-  {
-    title: "Backend",
-    skills: [
-      "Java",
-      "Spring Boot",
-      "Microservices",
-      "REST APIs",
-      "OAuth2",
-      "JWT",
-    ],
-  },
-
-  {
-    title: "Frontend",
-    skills: ["ReactJS", "JavaScript", "MUI", "HTML", "CSS"],
-  },
-
-  {
-    title: "Database",
-    skills: ["PostgreSQL", "MS SQL Server", "MySQL"],
-  },
-
-  {
-    title: "DevOps",
-    skills: ["Docker", "Git", "GitHub", "Azure DevOps", "Jenkins"],
-  },
-];
-
-export const experienceData = [
-  {
-    company: "Current Company",
-
+    company: "Coforge",
     role: "Senior Full Stack Developer",
-
-    duration: "2023 - Present",
-
+    period: "June 2022 - Present",
     description:
-      "Developing scalable enterprise applications using Spring Boot, ReactJS and Microservices architecture.",
+      "Developing enterprise-grade applications using Java, Spring Boot, ReactJS, PostgreSQL, OAuth2 and Microservices architecture.",
+    skills: ["Java", "Spring Boot", "ReactJS","DevOps", "PostgreSQL", "MS SQL"],
   },
-
   {
-    company: "Previous Company",
-
+    company: "Excellarate",
     role: "Software Engineer",
-
-    duration: "2021 - 2023",
-
+    period: "April 2022 - June 2022",
     description:
-      "Worked on backend services, authentication systems and database optimization.",
+      "Worked on large-scale backend systems, REST APIs, authentication and database optimization projects.",
+    skills: ["Java", "Spring Boot", "Microservices", "JWT", "PostgreSQL", "MS SQL"],
   },
 ];
 
@@ -130,4 +85,39 @@ export const projectsData = [
 
     demo: "https://demo-link.com",
   },
+];
+
+
+export const skillCategories = [
+  {
+    title: "Backend",
+    skills: [
+      { name: "Java", value: 95 },
+      { name: "Spring Boot", value: 92 },
+      { name: "Microservices", value: 90 },
+      { name: "REST APIs", value: 95 },
+    ],
+  },
+  {
+    title: "Frontend",
+    skills: [
+      { name: "ReactJS", value: 88 },
+      { name: "JavaScript", value: 90 },
+      { name: "MUI", value: 90 },
+      { name: "HTML/CSS", value: 92 },
+    ],
+  },
+];
+
+export const tools = [
+  "PostgreSQL",
+  "MS SQL Server",
+  "Docker",
+  "Git",
+  "GitHub",
+  "Azure DevOps",
+  "Jenkins",
+  "OAuth2",
+  "JWT",
+  "Apache Camel",
 ];

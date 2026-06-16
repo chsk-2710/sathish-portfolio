@@ -1,9 +1,14 @@
 export const aboutStyles = {
   section: {
-    py: {
-      xs: 8,
-      md: 12,
-    },
+      pt: {
+        xs: 1,
+        md: 3,
+      },
+      pb: {
+        xs: 1,
+        md: 3,
+      },
+    scrollMarginTop: "80px",
   },
 
   title: {
@@ -17,7 +22,7 @@ export const aboutStyles = {
     color: "text.secondary",
     maxWidth: "700px",
     mx: "auto",
-    mb: 6,
+    mb: 4,
   },
 
   card: {

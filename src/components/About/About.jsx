@@ -8,41 +8,27 @@ import {
 } from "@mui/material";
 
 import { aboutStyles } from "./aboutStyles";
+import { profile } from "../../data/portfolioData";
 
 function About() {
   return (
-    <Box
-      id="about"
-      sx={aboutStyles.section}
-    >
+    <Box id="about" sx={aboutStyles.section}>
       <Container maxWidth="lg">
-        <Typography
-          variant="h3"
-          sx={aboutStyles.title}
-        >
+        <Typography variant="h4" sx={aboutStyles.title}>
           About Me
         </Typography>
 
-        <Typography sx={aboutStyles.subtitle}>
-          Passionate Full Stack Developer
-          specializing in scalable enterprise
-          applications.
-        </Typography>
+        <Typography sx={aboutStyles.subtitle}>{profile.about}</Typography>
 
-        <Grid container spacing={4}>
+        {/* <Grid container spacing={4}>
           <Grid size={{ xs: 12, md: 6 }}>
             <Card sx={aboutStyles.card}>
               <CardContent>
-                <Typography
-                  variant="h5"
-                  sx={aboutStyles.cardTitle}
-                >
+                <Typography variant="h5" sx={aboutStyles.cardTitle}>
                   Professional Summary
                 </Typography>
 
-                <Typography
-                  sx={aboutStyles.content}
-                >
+                <Typography sx={aboutStyles.content}>
                   Full Stack Developer with{" "}
                   <span
                     style={{
@@ -51,10 +37,8 @@ function About() {
                   >
                     5+ years
                   </span>{" "}
-                  of experience in Java,
-                  Spring Boot, ReactJS,
-                  PostgreSQL, Microservices
-                  and Cloud solutions.
+                  of experience in Java, Spring Boot, ReactJS, PostgreSQL,
+                  Microservices and Cloud solutions.
                 </Typography>
               </CardContent>
             </Card>
@@ -63,26 +47,18 @@ function About() {
           <Grid size={{ xs: 12, md: 6 }}>
             <Card sx={aboutStyles.card}>
               <CardContent>
-                <Typography
-                  variant="h5"
-                  sx={aboutStyles.cardTitle}
-                >
+                <Typography variant="h5" sx={aboutStyles.cardTitle}>
                   What I Do
                 </Typography>
 
-                <Typography
-                  sx={aboutStyles.content}
-                >
-                  Design and develop secure,
-                  scalable and high-performance
-                  applications with modern
-                  technologies and clean
-                  architecture.
+                <Typography sx={aboutStyles.content}>
+                  Design and develop secure, scalable and high-performance
+                  applications with modern technologies and clean architecture.
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
-        </Grid>
+        </Grid> */}
       </Container>
     </Box>
   );

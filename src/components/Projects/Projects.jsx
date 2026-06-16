@@ -64,7 +64,7 @@ function Projects() {
     >
       <Container maxWidth="lg">
         <Typography
-          variant="h3"
+          variant="h4"
           sx={projectsStyles.title}
         >
           Featured Projects

@@ -8,9 +8,10 @@ export const heroStyles = {
       md: 2,
     },
     pb: {
-      xs: 4,
-      md: 6,
+      xs: 0,
+      md: 1,
     },
+    scrollMarginTop: "80px",
   },
 
   content: {
@@ -65,7 +66,7 @@ export const heroStyles = {
     gap: 2,
 
     flexDirection: {
-      xs: "column",
+      xs: "row",
       sm: "row",
     },
   },

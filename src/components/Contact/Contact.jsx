@@ -1,87 +1,84 @@
-import {
-  Box,
-  Card,
-  Container,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 
 import {
   EmailOutlined,
-  LinkedIn,
   GitHub,
+  LinkedIn,
+  PhoneAndroid,
 } from "@mui/icons-material";
 
 import { contactStyles } from "./contactStyles";
+import { profile } from "../../data/portfolioData";
 
 function Contact() {
   return (
-    <Box
-      id="contact"
-      sx={contactStyles.section}
-    >
+    <Box id="contact" sx={contactStyles.section}>
       <Container maxWidth="lg">
-        <Typography
-          variant="h3"
-          sx={contactStyles.title}
-        >
+        <Typography variant="h4" sx={contactStyles.title}>
           Contact Me
         </Typography>
 
         <Typography sx={contactStyles.subtitle}>
-          Interested in working together or
-          discussing new opportunities?
+          Interested in working together or discussing new opportunities?
         </Typography>
 
-        <Grid container spacing={4}>
-          <Grid size={{ xs: 12, md: 4 }}>
-            <Card sx={contactStyles.card}>
-              <EmailOutlined
-                sx={contactStyles.icon}
-              />
-
-              <Typography variant="h6">
-                Email
-              </Typography>
-
-              <Typography
-                sx={contactStyles.value}
-              >
-                yourmail@gmail.com
-              </Typography>
-            </Card>
+        <Grid
+          container
+          spacing={1}
+          justifyContent="center"
+          alignItems="center"
+          sx={contactStyles.gridContainer}
+        >
+          <Grid item xs={12} md={4} sx={contactStyles.gridItem}>
+            <Button
+              variant="outlined"
+              size="medium"
+              component={profile.email ? "a" : "button"}
+              href={profile.email ? `mailto:${profile.email}` : undefined}
+              startIcon={<EmailOutlined />}
+            >
+              {profile.email || "Email"}
+            </Button>
           </Grid>
 
-          <Grid size={{ xs: 12, md: 4 }}>
-            <Card sx={contactStyles.card}>
-              <LinkedIn sx={contactStyles.icon} />
-
-              <Typography variant="h6">
-                LinkedIn
-              </Typography>
-
-              <Typography
-                sx={contactStyles.value}
-              >
-                linkedin.com/in/sathish
-              </Typography>
-            </Card>
+          <Grid item xs={12} md={4} sx={contactStyles.gridItem}>
+            <Button
+              variant="outlined"
+              size="medium"
+              component={profile.phone ? "a" : "button"}
+              href={profile.phone ? `tel:${profile.phone}` : undefined}
+              startIcon={<PhoneAndroid />}
+            >
+              {profile.phone || "Phone"}
+            </Button>
           </Grid>
 
-          <Grid size={{ xs: 12, md: 4 }}>
-            <Card sx={contactStyles.card}>
-              <GitHub sx={contactStyles.icon} />
+          <Grid item xs={12} md={4} sx={contactStyles.gridItem}>
+            <Button
+              variant="outlined"
+              size="medium"
+              component="a"
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              startIcon={<LinkedIn />}
+            >
+              LinkedIn
+            </Button>
+          </Grid>
 
-              <Typography variant="h6">
-                GitHub
-              </Typography>
-
-              <Typography
-                sx={contactStyles.value}
-              >
-                github.com/sathish
-              </Typography>
-            </Card>
+          <Grid item xs={12} md={4} sx={contactStyles.gridItem}>
+            <Button
+              variant="outlined"
+              size="medium"
+              component="a"
+              href={profile.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              startIcon={<GitHub />}
+            >
+              GitHub
+            </Button>
           </Grid>
         </Grid>
       </Container>

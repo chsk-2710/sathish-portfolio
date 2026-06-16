@@ -1,15 +1,20 @@
 export const experienceStyles = {
   section: {
-    py: {
-      xs: 8,
-      md: 12,
+    pt: {
+      xs: 1,
+      md: 3,
     },
+    pb: {
+      xs: 1,
+      md: 3,
+    },
+    scrollMarginTop: "80px",
   },
 
   title: {
     textAlign: "center",
     fontWeight: 800,
-    mb: 2,
+    mb: 1,
   },
 
   subtitle: {
@@ -17,14 +22,14 @@ export const experienceStyles = {
     color: "text.secondary",
     maxWidth: "700px",
     mx: "auto",
-    mb: 6,
+    mb: 4,
   },
 
   timelineItem: {
     borderLeft: "4px solid",
     borderColor: "primary.main",
     pl: 4,
-    pb: 5,
+    pb: 3,
     position: "relative",
   },
 
