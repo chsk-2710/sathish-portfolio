@@ -28,7 +28,14 @@ export const experiences = [
     period: "June 2022 - Present",
     description:
       "Developing enterprise-grade applications using Java, Spring Boot, ReactJS, PostgreSQL, OAuth2 and Microservices architecture.",
-    skills: ["Java", "Spring Boot", "ReactJS","DevOps", "PostgreSQL", "MS SQL"],
+    skills: [
+      "Java",
+      "Spring Boot",
+      "ReactJS",
+      "DevOps",
+      "PostgreSQL",
+      "MS SQL",
+    ],
   },
   {
     company: "Excellarate",
@@ -36,57 +43,16 @@ export const experiences = [
     period: "April 2022 - June 2022",
     description:
       "Worked on large-scale backend systems, REST APIs, authentication and database optimization projects.",
-    skills: ["Java", "Spring Boot", "Microservices", "JWT", "PostgreSQL", "MS SQL"],
+    skills: [
+      "Java",
+      "Spring Boot",
+      "Microservices",
+      "JWT",
+      "PostgreSQL",
+      "MS SQL",
+    ],
   },
 ];
-
-export const projectsData = [
-  {
-    title: "User Management System",
-
-    description:
-      "Enterprise user management solution with authentication and authorization.",
-
-    image: "/images/project1.jpg",
-
-    technologies: ["Spring Boot", "ReactJS", "PostgreSQL"],
-
-    github: "https://github.com/your-github/project1",
-
-    demo: "https://demo-link.com",
-  },
-
-  {
-    title: "Excel Processing Engine",
-
-    description:
-      "Large-scale Excel processing application capable of handling millions of records.",
-
-    image: "/images/project2.jpg",
-
-    technologies: ["Java", "Spring Boot", "Apache POI"],
-
-    github: "https://github.com/your-github/project2",
-
-    demo: "https://demo-link.com",
-  },
-
-  {
-    title: "Customer Portal",
-
-    description:
-      "Modern self-service customer portal built using ReactJS and Spring Boot.",
-
-    image: "/images/project3.jpg",
-
-    technologies: ["ReactJS", "MUI", "Docker"],
-
-    github: "https://github.com/your-github/project3",
-
-    demo: "https://demo-link.com",
-  },
-];
-
 
 export const skillCategories = [
   {
@@ -120,4 +86,25 @@ export const tools = [
   "OAuth2",
   "JWT",
   "Apache Camel",
+];
+
+export const projects = [
+  {
+    title: "340B Direct Healthcare System",
+    description:
+      "340B direct is a drug discounted program in US. The US government provide the drug discount to the below poverty people.",
+    tech: ["Java", "Spring Boot", "ReactJS", "PostgreSQL","MS SQL Server", "JWT", "Microservices"],
+  },
+  {
+    title: "HRMS Portal",
+    description:
+      "HRMS portal is a human resource management system which is used to manage the employee details, leave management, payroll management and other HR related activities.",
+    tech: ["Java", "Spring Boot", "Apache POI", "PostgreSQL"],
+  },
+  {
+    title: "Hospital Management System",
+    description:
+      "Hospital management system is a software application which is used to manage the hospital activities like patient management, doctor management, appointment management, billing management and other hospital related activities.",
+    tech: ["ReactJS", "MUI", "Spring Boot", "Docker"],
+  },
 ];
